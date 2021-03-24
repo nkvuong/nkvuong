@@ -35,5 +35,3 @@
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=flat-square&logoColor=white)
 
 [![Vuong's github stats](https://github-readme-stats.vercel.app/api?username=nkvuong&theme=dark&show_icons=true&count_private=true)](https://github.com/nkvuong/github-readme-stats&count_private=true)
-
-**Fun fact** ⚡:
