@@ -1,6 +1,6 @@
 ### 👋 from Vuong
 
-**I'm a Big Data/Cloud architect working in London.**
+I'm a Big Data/Cloud architect working in London.
 
 ### Where to find me:
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/vuong-nguyen/)
