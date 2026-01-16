@@ -44,5 +44,5 @@ I'm a Big Data/Cloud architect working in Singapore.
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=flat-square&logoColor=white)
 
 ![Stats](./profile/stats.svg)
+
 ![Top Languages](./profile/top-langs.svg)
-![Pinned](./profile/pin-readme-tools-github-readme-stats.svg)
