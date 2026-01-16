@@ -1,6 +1,6 @@
 ### 👋 from Vuong
 
-I'm a Big Data/Cloud architect working in London.
+I'm a Big Data/Cloud architect working in Singapore.
 
 ### Where to find me:
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/vuong-nguyen/)
@@ -43,4 +43,6 @@ I'm a Big Data/Cloud architect working in London.
 ![Github](https://img.shields.io/badge/-Github-181717?logo=Github&style=flat-square&logoColor=white)
 ![Overleaf](https://img.shields.io/badge/-Overleaf-47A141?logo=Overleaf&style=flat-square&logoColor=white)
 
-[![Vuong's github stats](https://github-readme-stats.vercel.app/api?username=nkvuong&theme=dark&show_icons=true&count_private=true)](https://github.com/nkvuong/github-readme-stats&count_private=true)
+![Stats](./profile/stats.svg)
+![Top Languages](./profile/top-langs.svg)
+![Pinned](./profile/pin-readme-tools-github-readme-stats.svg)
