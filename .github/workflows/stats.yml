@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
@@ -31,10 +33,38 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GH_PAT }}
 
+      - name: Verify generated cards
+        run: |
+          set -euo pipefail
+          for card in profile/stats.svg profile/top-langs.svg; do
+            if [ ! -s "$card" ]; then
+              echo "::error file=$card::Card was not generated or is empty"
+              exit 1
+            fi
+            if grep -qi "Something went wrong" "$card"; then
+              echo "::error file=$card::Card contains a github-readme-stats error response"
+              sed -n '1,20p' "$card"
+              exit 1
+            fi
+          done
+
       - name: Commit cards
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
-          git commit -m "Update README cards" || exit 0
-          git push
+          git add profile/stats.svg profile/top-langs.svg
+          if git diff --cached --quiet; then
+            echo "Cards unchanged, nothing to commit."
+            exit 0
+          fi
+          git commit -m "Update README cards"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed, rebasing onto origin/$GITHUB_REF_NAME"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+          done
+          echo "::error::Failed to push updated README cards after 3 attempts"
+          exit 1
