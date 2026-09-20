@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">vuong-nguyen's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 1204, Total PRs: 1138, Total Issues: 213, Contributed to (last year): 11</desc>
+        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 1223, Total PRs: 1147, Total Issues: 213, Contributed to (last year): 11</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 74.0168406918474;
+        stroke-dashoffset: 73.9405302119625;
       }
     }
   
